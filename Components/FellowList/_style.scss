@@ -1,0 +1,106 @@
+.jpkf-fellow-list {
+  padding: 74px 0 49px;
+}
+
+.jpkf-fellow-list__avatar {
+  position: relative;
+
+  img {
+    border-radius: 4px;
+    width: 100%;
+  }
+}
+
+.jpkf-fellow-list__linkedin-svg {
+  bottom: 16px;
+  position: absolute;
+  right: 16px;
+}
+
+.jpkf-fellow-list__name {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.jpkf-fellow-list__year {
+  margin-top: 22px;
+  text-align: center;
+}
+
+.jpkf-fellow-list__role {
+  margin-top: 5px;
+  text-align: center;
+
+  p {
+    font-size: 14px;
+    line-height: 1.61;
+  }
+}
+
+.jpkf-fellow-list__col {
+  padding: 20px 0;
+}
+
+.jpkf-fellow-list__row {
+  margin-top: 76px;
+}
+
+@media(max-width: $breakpoint-mobile-start) {
+  .jpkf-fellow-list {
+    .container--small {
+      max-width: 100%;
+    }
+  }
+}
+
+@media(min-width: $breakpoint-mobile-start) {
+  .jpkf-fellow-list {
+    padding: 74px 0 44px;
+  }
+
+  .jpkf-fellow-list__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 39px -12px 0;
+  }
+
+  .jpkf-fellow-list__col {
+    padding: 23px 12px;
+    width: 50%;
+  }
+
+  .jpkf-fellow-list__name {
+    margin-top: 20x;
+  }
+
+  .jpkf-fellow-list__year {
+    margin-top: 14px;
+  }
+
+  .jpkf-fellow-list__role {
+    p {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+  }
+}
+
+@media(min-width: $breakpoint-tablet-start) {
+  .jpkf-fellow-list {
+    padding: 70px 0;
+  }
+
+  .jpkf-fellow-list__row {
+    margin: 47px -30px 0;
+  }
+
+  .jpkf-fellow-list__col {
+    padding: 20px 30px;
+    width: 33.33333%;
+  }
+
+  .jpkf-fellow-list__name {
+    margin-top: 9px;
+  }
+}

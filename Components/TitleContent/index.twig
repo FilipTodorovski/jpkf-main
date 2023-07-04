@@ -1,0 +1,15 @@
+<section class="jpkf-title-content">
+    <div class="container--small">
+        <div class="jpkf-info">
+            <div class="pre-title">{{ title }}</div>
+            <div class="jpkf-content">
+                {{ content|apply_filters('the_content') }}
+            </div>
+            <div class="jpkf-title-content__signer-grid">
+                {% for signer in signers %}
+                    <div class="jpkf-title-content__signer-name">{{ signer.name }}</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,28 @@
+<section class="jpkf-contact-form">
+    <div class="jpkf-contact-form__inner">
+        <div class="container">
+            <div class="jpkf-contact-form__top-row">
+                <div class="jpkf-contact-form__top-left-col">
+                    <h1 class="h1">{{ hero_title }}</h1>
+                </div>
+                <div class="jpkf-contact-form__top-right-col">
+                    <div class="jpkf-contact-form__top-image">
+                        <img
+                            class="lazyload"
+                            src="{{ placeholderImage(image.width / 2, image.height / 2) }}"
+                            data-src="{{ image.src|resizeDynamic(image.width / 2) }}"
+                            data-srcset="{{ image.src|resizeDynamic(image.width / 2) }} 1x, {{ image.src|resizeDynamic(image.width) }} 2x"
+                            data-sizes="auto"
+                            alt="{{ image.alt|e }}"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container--small">
+            <div class="jpkf-gravity-form">
+                {{ gravity_form_shortcode|shortcodes }}
+            </div>
+        </div>
+    </div>
+</section>

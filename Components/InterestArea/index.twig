@@ -1,0 +1,21 @@
+<section class="jpkf-interest-area">
+    <div class="container">
+        <div class="container--small">
+            <div class="pre-title pre-title--white pre-title--left-line pre-title--left-line--white">{{ pre_title }}</div>
+            <div class="jpkf-interest-area__list">
+                {% for index, area in area_list %}
+                    <div class="jpkf-interest-area__item">
+                        <div class="jpkf-interest-area__item-row">
+                            <div class="jpkf-interest-area__item-img jpkf-interest-area__item-img-{{ index }}">
+                                <img src="{{ area.image.src }}" alt="{{ area.image.alt }}">
+                            </div>
+                            <div class="jpkf-interest-area__item-txt">
+                                {{ area.content }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

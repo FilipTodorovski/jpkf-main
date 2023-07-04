@@ -1,0 +1,11 @@
+<section class="jpkf-app-form">
+    <div class="container--small">
+        <h1 class="h1">{{ hero_title }}</h1>
+        <div class="jpkf-content">
+            {{ content|apply_filters('the_content') }}
+        </div>
+        <div class="jpkf-gravity-form">
+            {{ gravity_form_shortcode|shortcodes }}
+        </div>
+    </div>
+</section>

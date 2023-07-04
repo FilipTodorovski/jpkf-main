@@ -1,0 +1,132 @@
+.jpkf-mission {
+  .container--small {
+    padding-bottom: 150px;
+    position: relative;
+
+    &::before {
+      border: 1px solid $color-blue-1;
+      border-bottom: 0;
+      border-radius: 273px 273px 0 0;
+      bottom: -30px;
+      content: '';
+      height: 136px;
+      left: -140px;
+      position: absolute;
+      width: 273px;
+    }
+
+    .jpkf-info {
+      margin-top: 65px;
+    }
+  }
+}
+
+.jpkf-mission__img {
+  position: relative;
+
+  img {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media(max-width: $breakpoint-mobile-start) {
+  .jpkf-mission {
+    .container--small {
+      max-width: 100%;
+    }
+  }
+
+  .jpkf-mission__img {
+    margin: 0 -40px;
+
+    &::before {
+      background-color: $color-blue;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 40px;
+      top: -40px;
+      z-index: 1;
+    }
+  }
+}
+
+@media(min-width: $breakpoint-mobile-start) {
+  .jpkf-mission {
+    .container--small {
+      padding-bottom: 203px;
+
+      &::before {
+        border-radius: 414px 414px 0 0;
+        bottom: -30px;
+        height: 206px;
+        left: -275px;
+        width: 414px;
+      }
+    }
+  }
+
+  .jpkf-mission__img {
+    &::before {
+      background-color: $color-blue;
+      content: '';
+      height: 100%;
+      left: calc(300px - 50vw);
+      position: absolute;
+      right: 100%;
+      top: -50px;
+      z-index: 1;
+    }
+    
+    &::after {
+      background-color: $color-blue;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: -50px;
+      width: 430px;
+      z-index: 1;
+    }
+  }
+}
+
+@media(min-width: $breakpoint-tablet-start) {
+  .jpkf-mission {
+    .container--small {
+      padding-bottom: 100px;
+
+      &::before {
+        border-radius: 438px 438px 0 0;
+        bottom: 0;
+        height: 218px;
+        left: -518px;
+        width: 438px;
+      }
+
+      .jpkf-info {
+        margin-top: 74px;
+      }
+    }
+  }
+
+  .jpkf-mission__img {
+    &::before {
+      top: -35px;
+    }
+    
+    &::after {
+      top: -35px;
+    }
+  }
+}
+
+@media(min-width: $container-width) {
+  .jpkf-mission__img {
+    &::before {
+      left: calc(475px - 50vw);
+    }
+  }
+}

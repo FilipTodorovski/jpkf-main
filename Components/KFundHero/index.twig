@@ -1,0 +1,46 @@
+<section class="jpkf-kfund-hero">
+    <div class="jpkf-kfund-hero__wrapper">
+        <div class="container">
+            <div class="jpkf-kfund-hero__top-row">
+                <div class="jpkf-kfund-hero__top-left-col">
+                    <h1 class="h1">{{ hero_title }}</h1>
+                </div>
+                <div class="jpkf-kfund-hero__top-right-col">
+                    <div class="jpkf-kfund-hero__top-img">
+                        <img
+                            class="lazyload"
+                            src="{{ placeholderImage(image.width / 2, image.height / 2) }}"
+                            data-src="{{ image.src|resizeDynamic(image.width / 2) }}"
+                            data-srcset="{{ image.src|resizeDynamic(image.width / 2) }} 1x, {{ image.src|resizeDynamic(image.width) }} 2x"
+                            data-sizes="auto"
+                            alt="{{ image.alt|e }}"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container--small">
+            <div class="jpkf-info">
+                <div class="pre-title">{{ pre_title }}</div>
+                <h2 class="h2">{{ title }}</h2>
+                <div class="jpkf-content">
+                    {{ content|apply_filters('the_content') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="jpkf-kfund-hero__bottom">
+    <div class="container">
+        <div class="jpkf-kfund-hero__bottom-img">
+            <img
+                class="lazyload"
+                src="{{ placeholderImage(bottom_image.width / 2, bottom_image.height / 2) }}"
+                data-src="{{ bottom_image.src|resizeDynamic(bottom_image.width / 2) }}"
+                data-srcset="{{ bottom_image.src|resizeDynamic(bottom_image.width / 2) }} 1x, {{ bottom_image.src|resizeDynamic(bottom_image.width) }} 2x"
+                data-sizes="auto"
+                alt="{{ bottom_image.alt|e }}"
+            />
+        </div>
+    </div>
+</section>

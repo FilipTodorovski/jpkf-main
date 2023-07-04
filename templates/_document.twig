@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="html {{ body_class }}" lang="{{ site.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ __('Feed', 'flynt') }}" href="{{ site.rss2 | e('esc_url') }}">
+    {{ function('wp_head') }}
+  </head>
+  <body>
+    {% block header %}
+      {{ renderComponent('SiteHeader') }}
+    {% endblock %}
+    
+    {% block content %}
+      No <code>{{ '{% block content %}' }}</code> defined for this template.
+    {% endblock %}
+    
+    {% block footer %}
+      {{ renderComponent('SiteFooter') }}
+    {% endblock %}
+    
+    {{ function('wp_footer') }}
+  </body>
+</html>

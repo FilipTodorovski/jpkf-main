@@ -1,0 +1,32 @@
+<section class="jpkf-about-us-hero">
+    <div class="jpkf-about-us-hero__wrapper">
+        <div class="container">
+            <div class="jpkf-about-us-hero__top-row">
+                <div class="jpkf-about-us-hero__top-left-col">
+                    <h1 class="h1">{{ hero_title }}</h1>
+                </div>
+                <div class="jpkf-about-us-hero__top-right-col">
+                    <div class="jpkf-about-us-hero__top-image">
+                        <img
+                            class="lazyload"
+                            src="{{ placeholderImage(image.width / 2, image.height / 2) }}"
+                            data-src="{{ image.src|resizeDynamic(image.width / 2) }}"
+                            data-srcset="{{ image.src|resizeDynamic(image.width / 2) }} 1x, {{ image.src|resizeDynamic(image.width) }} 2x"
+                            data-sizes="auto"
+                            alt="{{ image.alt|e }}"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="container--small">
+                <div class="jpkf-info">
+                    <div class="pre-title">{{ pre_title }}</div>
+                    <h2 class="h2">{{ title }}</h2>
+                    <div class="jpkf-content">
+                        {{ content|apply_filters('the_content') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

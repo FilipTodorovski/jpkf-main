@@ -1,0 +1,125 @@
+<section class="jpkf-three-image-content">
+    <div class="jpkf-three-image-content__wrapper">
+        <div class="container">
+            <div class="jpkf-three-image-content__top">
+                <div class="jpkf-three-image-content__top-row">
+                    <div class="jpkf-three-image-content__top-right-col">
+                        <div class="jpkf-three-image-content__top-img jpkf-three-image-content__top-img-1">
+                            <img
+                                class="lazyload"
+                                src="{{ placeholderImage(header_image.width / 2, header_image.height / 2) }}"
+                                data-src="{{ header_image.src|resizeDynamic(header_image.width / 2) }}"
+                                data-srcset="{{ header_image.src|resizeDynamic(header_image.width / 2) }} 1x, {{ header_image.src|resizeDynamic(header_image.width) }} 2x"
+                                data-sizes="auto"
+                                alt="{{ header_image.alt|e }}"
+                            />
+                        </div>
+                        <div class="jpkf-three-image-content__content-tablet">
+                            <div class="jpkf-info">
+                                <div class="pre-title">{{ pre_title_2 }}</div>
+                                <h2 class="h2">{{ title_2 }}</h2>
+                                <div class="jpkf-content">
+                                    {{ content_2|apply_filters('the_content') }}
+                                </div>
+                                <div class="jpkf-info__btn">
+                                    <a class="btn--round" href="{{ link_2.url }}">{{ link_2.title }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jpkf-three-image-content__top-left-col jpkf-three-image-content__top-left-col--white">
+                        <h1 class="h1-small">{{ header_title }}</h1>
+                        <div class="jpkf-content">
+                            {{ header_content|apply_filters('the_content') }}
+                        </div>
+                        <div id="js-jpkf-three-image-content__arrow-down" class="jpkf-arrow-btn">
+                            <svg width="32" height="17" viewBox="0 0 32 17" fill="none"><path d="M0.651611 0.716187L15.6645 14.8904L30.7613 0.716187" stroke="#EAEAEA" stroke-width="2" stroke-miterlimit="10"/></svg>
+                        </div>
+                        <div class="jpkf-three-image-content__img-tablet">
+                            <img
+                                class="lazyload"
+                                src="{{ placeholderImage(image_2.width / 2, image_2.height / 2) }}"
+                                data-src="{{ image_2.src|resizeDynamic(image_2.width / 2) }}"
+                                data-srcset="{{ image_2.src|resizeDynamic(image_2.width / 2) }} 1x, {{ image_2.src|resizeDynamic(image_2.width) }} 2x"
+                                data-sizes="auto"
+                                alt="{{ image_2.alt|e }}"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div id="jpkf-three-image-content__top-next" class="jpkf-three-image-content__top-row">
+                    <div class="jpkf-three-image-content__top-right-col jpkf-three-image-content__top-right-col--second">
+                        <div class="jpkf-info">
+                            <div class="pre-title">{{ pre_title_2 }}</div>
+                            <h2 class="h2">{{ title_2 }}</h2>
+                            <div class="jpkf-content">
+                                {{ content_2|apply_filters('the_content') }}
+                            </div>
+                            <div class="jpkf-three-image-content__top-img-2 mobile--show">
+                                <img
+                                    class="lazyload"
+                                    src="{{ placeholderImage(image_2.width / 2, image_2.height / 2) }}"
+                                    data-src="{{ image_2.src|resizeDynamic(image_2.width / 2) }}"
+                                    data-srcset="{{ image_2.src|resizeDynamic(image_2.width / 2) }} 1x, {{ image_2.src|resizeDynamic(image_2.width) }} 2x"
+                                    data-sizes="auto"
+                                    alt="{{ image_2.alt|e }}"
+                                />
+                            </div>
+                            <div class="jpkf-info__btn">
+                                <a class="btn--round" href="{{ link_2.url }}">{{ link_2.title }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jpkf-three-image-content__top-left-col mobile--hide">
+                        <div class="jpkf-three-image-content__top-img jpkf-three-image-content__top-img-2">
+                            <img
+                                class="lazyload"
+                                src="{{ placeholderImage(image_2.width / 2, image_2.height / 2) }}"
+                                data-src="{{ image_2.src|resizeDynamic(image_2.width / 2) }}"
+                                data-srcset="{{ image_2.src|resizeDynamic(image_2.width / 2) }} 1x, {{ image_2.src|resizeDynamic(image_2.width) }} 2x"
+                                data-sizes="auto"
+                                alt="{{ image_2.alt|e }}"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jpkf-three-image-content__bottom-row">
+                <div class="jpkf-three-image-content__bottom-left-col">
+                    <div class="jpkf-info">
+                        <div class="pre-title pre-title--left-line">{{ pre_title_3 }}</div>
+                        <h2 class="h2">{{ title_3 }}</h2>
+                        <div class="jpkf-content">
+                            {{ content_3|apply_filters('the_content') }}
+                        </div>
+                        <div class="jpkf-three-image-content__top-img-3 mobile--show">
+                            <img
+                                class="lazyload"
+                                src="{{ placeholderImage(image_3.width / 2, image_3.height / 2) }}"
+                                data-src="{{ image_3.src|resizeDynamic(image_3.width / 2) }}"
+                                data-srcset="{{ image_3.src|resizeDynamic(image_3.width / 2) }} 1x, {{ image_3.src|resizeDynamic(image_3.width) }} 2x"
+                                data-sizes="auto"
+                                alt="{{ image_3.alt|e }}"
+                            />
+                        </div>
+                        <div class="jpkf-info__btn">
+                            <a class="btn--round" href="{{ link_3.url }}">{{ link_3.title }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="jpkf-three-image-content__bottom-right-col mobile--hide">
+                    <div class="jpkf-three-image-content__top-img jpkf-three-image-content__top-img-3">
+                        <img
+                            class="lazyload"
+                            src="{{ placeholderImage(image_3.width / 2, image_3.height / 2) }}"
+                            data-src="{{ image_3.src|resizeDynamic(image_3.width / 2) }}"
+                            data-srcset="{{ image_3.src|resizeDynamic(image_3.width / 2) }} 1x, {{ image_3.src|resizeDynamic(image_3.width) }} 2x"
+                            data-sizes="auto"
+                            alt="{{ image_3.alt|e }}"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

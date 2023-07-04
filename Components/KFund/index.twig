@@ -1,0 +1,40 @@
+<section class="jpkf-kfund">
+    <div class="container">
+        <div class="jpkf-kfund__row">
+            <div class="jpkf-kfund__left-col">
+                <div class="jpkf-info jpkf-info--white-color">
+                    <div class="pre-title">{{ pre_title }}</div>
+                    <h2 class="h2">{{ title }}</h2>
+                    <div class="jpkf-content">
+                        {{ content|apply_filters('the_content') }}
+                    </div>
+                    <div class="jpkf-kfund__img mobile--show">
+                        <img
+                            class="lazyload"
+                            src="{{ placeholderImage(image.width / 2, image.height / 2) }}"
+                            data-src="{{ image.src|resizeDynamic(image.width / 2) }}"
+                            data-srcset="{{ image.src|resizeDynamic(image.width / 2) }} 1x, {{ image.src|resizeDynamic(image.width) }} 2x"
+                            data-sizes="auto"
+                            alt="{{ image.alt|e }}"
+                        />
+                    </div>
+                    <div class="jpkf-info__btn">
+                        <a class="btn--round" href="{{ link.url }}">{{ link.title }}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="jpkf-kfund__right-col mobile--hide">
+                <div class="jpkf-kfund__img">
+                    <img
+                        class="lazyload"
+                        src="{{ placeholderImage(image.width / 2, image.height / 2) }}"
+                        data-src="{{ image.src|resizeDynamic(image.width / 2) }}"
+                        data-srcset="{{ image.src|resizeDynamic(image.width / 2) }} 1x, {{ image.src|resizeDynamic(image.width) }} 2x"
+                        data-sizes="auto"
+                        alt="{{ image.alt|e }}"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,35 @@
+.jpkf-title-content {
+  padding: 74px 0 68px;
+}
+
+.jpkf-title-content__signer-grid {
+  column-gap: 40px;
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 50px;
+  row-gap: 13px;
+}
+
+.jpkf-title-content__signer-name {
+  font-size: 19px;
+  font-weight: $font-weight-semibold;
+  line-height: 1.26;
+}
+
+@media(min-width: 500px) {
+  .jpkf-title-content__signer-grid {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media(min-width: $breakpoint-mobile-start) {
+  .jpkf-title-content {
+    padding: 100px 0 40px;
+  }
+}
+
+@media(min-width: 850px) {
+  .jpkf-title-content__signer-grid {
+    grid-template-columns: repeat(3, 200px);
+  }
+}

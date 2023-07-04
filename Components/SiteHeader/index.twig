@@ -1,0 +1,23 @@
+<header class="jpkf-header">
+    <div class="container">
+        <div class="jpkf-header__row">
+            <div class="jpkf-header__logo">
+                <a href="{{ site.link }}"><img src="{{ logo.src }}" alt="{{ logo.alt }}"></a>
+            </div>
+            <div class="jpkf-header__mobile-btn">
+                <span></span>
+            </div>
+            <div id="js-jpkf-header__menu" class="jpkf-header__menu">
+                <nav class="jpkf-header__nav">
+                    <ul>
+                        {% for item in header_menu.items %}
+                            <li class="{{ item.classes | join(' ') }}">
+                                <a href="{{ item.link }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

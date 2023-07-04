@@ -1,0 +1,21 @@
+<section class="jpkf-mission">
+    <div class="container--small">
+        <div class="jpkf-mission__img">
+            <img
+                class="lazyload"
+                src="{{ placeholderImage(image.width / 2, image.height / 2) }}"
+                data-src="{{ image.src|resizeDynamic(image.width / 2) }}"
+                data-srcset="{{ image.src|resizeDynamic(image.width / 2) }} 1x, {{ image.src|resizeDynamic(image.width) }} 2x"
+                data-sizes="auto"
+                alt="{{ image.alt|e }}"
+            />
+        </div>
+        <div class="jpkf-info">
+            <div class="pre-title">{{ pre_title }}</div>
+            <h2 class="h2">{{ title }}</h2>
+            <div class="jpkf-content">
+                {{ content|apply_filters('the_content') }}
+            </div>
+        </div>
+    </div>
+</section>

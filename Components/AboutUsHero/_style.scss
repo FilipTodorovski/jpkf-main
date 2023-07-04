@@ -1,0 +1,215 @@
+.jpkf-about-us-hero {
+  padding: 13px 0 68px;
+}
+
+.jpkf-about-us-hero__top-image {
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: right top;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.jpkf-about-us-hero__wrapper {
+  overflow: hidden;
+
+  .container--small {
+    margin-top: 67px;
+  }
+}
+
+@media(max-width: $breakpoint-mobile-start) {
+  .jpkf-about-us-hero__top-image {
+    height: 275px;
+    margin: 0 -40px;
+  }
+
+  .jpkf-about-us-hero__top-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .jpkf-about-us-hero__wrapper {
+    .container--small {
+      padding: 0;
+    }
+  }
+
+  .jpkf-about-us-hero__top-right-col {
+    position: relative;
+
+    &::before {
+      background-color: $color-blue;
+      bottom: -40px;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: -40px;
+      top: 0;
+    }
+
+    &::after {
+      background-color: rgba($color-blue-1, 0.29);
+      border-radius: 0 0 375px 375px;
+      content: '';
+      height: 188px;
+      left: -40px;
+      position: absolute;
+      top: 0;
+      width: 375px;
+      z-index: 3;
+    }
+  }
+
+  .jpkf-about-us-hero__top-left-col {
+    margin-top: 77px;
+  }
+}
+
+@media(min-width: $breakpoint-mobile-start) {
+  .jpkf-about-us-hero {
+    padding: 50px 0 94px;
+  }
+
+  .jpkf-about-us-hero__top-right-col {
+    height: 386px;
+    position: relative;
+  }
+
+  .jpkf-about-us-hero__top-image {
+    bottom: 0;
+    left: 167px;
+    position: absolute;
+    right: -40px;
+    top: 0;
+
+    &::before {
+      background-color: $color-blue;
+      bottom: -34px;
+      content: '';
+      height: 100%;
+      left: -72px;
+      position: absolute;
+      right: 0;
+      z-index: 1;
+    }
+  }
+
+  .jpkf-about-us-hero__wrapper {
+    .container--small {
+      margin-top: 100px;
+    }
+  }
+}
+
+@media(min-width: $breakpoint-tablet-start) {
+  .jpkf-about-us-hero {
+    padding: 0 0 125px;
+    position: relative;
+
+    // &::before {
+    //   background-color: $color-blue;
+    //   bottom: 100%;
+    //   content: '';
+    //   height: 300px;
+    //   left: calc(50% + 70px);
+    //   position: absolute;
+    //   width: 1px;
+    // }
+  }
+
+  .jpkf-about-us-hero__wrapper {
+    position: relative;
+
+    &::after {
+      background-color: rgba($color-blue-1, 0.29);
+      border-radius: 0 0 568px 568px;
+      content: '';
+      height: 284px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 568px;
+      z-index: 3;
+    }
+
+    .container--small {
+      margin-top: 120px;
+    }  
+  }
+
+  .jpkf-about-us-hero__top-row {
+    align-items: center;
+    display: flex;
+    position: relative;
+
+    &::before {
+      border: 1px solid $color-blue-1;
+      border-radius: 50%;
+      bottom: -190px;
+      content: '';
+      height: 384px;
+      left: -324px;
+      position: absolute;
+      width: 384px;
+    }
+  }
+
+  .jpkf-about-us-hero__top-left-col {
+    width: 570px;
+  }
+
+  .jpkf-about-us-hero__top-right-col {
+    height: 450px;
+    width: calc(100% - 570px);
+  }
+
+  .jpkf-about-us-hero__top-image {
+    left: 0;
+    
+    &::before {
+      bottom: -40px;
+      left: -84px;
+    }
+  }
+}
+
+@media(min-width: $container-width) {
+  .jpkf-about-us-hero__top-image {
+    right: calc(600px - 50vw);
+  }
+}
+
+@media(min-width: $breakpoint-mobile-start) and (max-width: $breakpoint-tablet-start) {
+  .jpkf-about-us-hero__top-right-col {
+    margin-top: 45px;
+    padding-left: 167px;
+    position: relative;
+
+    &::before {
+      border: 1px solid $color-blue-1;
+      border-radius: 50%;
+      content: '';
+      height: 414px;
+      left: -357px;
+      position: absolute;
+      top: 0;
+      width: 414px;
+    }
+
+    &::after {
+      background-color: rgba($color-blue-1, 0.29);
+      border-radius: 0 0 482px 482px;
+      content: '';
+      height: 240px;
+      position: absolute;
+      right: -20px;
+      top: 0;
+      width: 482px;
+      z-index: 3;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<section class="jpkf-fellow-hero">
+    <div class="container">
+        <div class="jpkf-fellow-hero__top-row">
+            <div class="jpkf-fellow-hero__top-left-col">
+                <h1 class="h1">{{ hero_title }}</h1>
+            </div>
+            <div class="jpkf-fellow-hero__top-right-col">
+                <div class="jpkf-fellow-hero__top-image">
+                    <img
+                        class="lazyload"
+                        src="{{ placeholderImage(image.width / 2, image.height / 2) }}"
+                        data-src="{{ image.src|resizeDynamic(image.width / 2) }}"
+                        data-srcset="{{ image.src|resizeDynamic(image.width / 2) }} 1x, {{ image.src|resizeDynamic(image.width) }} 2x"
+                        data-sizes="auto"
+                        alt="{{ image.alt|e }}"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="container--small">
+            <div class="jpkf-info">
+                <div class="pre-title">{{ pre_title }}</div>
+                <h2 class="h2">{{ title }}</h2>
+                <div class="jpkf-content">
+                    {{ content|apply_filters('the_content') }}
+                </div>
+                <div class="jpkf__btn-row">
+                    <div class="jpkf__btn-col">
+                        <button id="js-fellow-hero-next-btn" class="btn--rectangle">Learn More</button>
+                    </div>
+                    <div class="jpkf__btn-col">
+                        <a class="btn--round" href="{{ link.url }}">{{ link.title }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
